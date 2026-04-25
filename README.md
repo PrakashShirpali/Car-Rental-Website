@@ -55,7 +55,7 @@ All services are managed via Docker Compose.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/car-rental-website.git
+git clone https://github.com/PrakashShirpali/car-rental-website.git
 cd car-rental-website
 ```
 
@@ -132,5 +132,5 @@ http://localhost
 
 ## Author
 
-Prakash
+Prakash Shirpali
 GitHub: https://github.com/PrakashShirpali
