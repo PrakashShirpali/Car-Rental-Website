@@ -1,0 +1,116 @@
+
+
+.car-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bs-2);
+  box-shadow: inset 0em 0em 1em 0.5em var(--bs-5);
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2em;
+  flex-wrap: wrap;
+}
+
+.car-category a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 0 3em;
+  cursor: pointer;
+  color: var(--bs-4);
+  transition:
+    box-shadow 0.4s ease-in-out,
+    color 0.6s ease-in-out;
+}
+
+.car-category a:hover {
+  box-shadow: inset 0em 0em 0em 0.8em var(--bs-1);
+  color: var(--bs-2);
+}
+
+.car-category .active {
+  background-color: var(--bs-6);
+  color: var(--bs-2);
+}
+
+.car-category .active:hover {
+  box-shadow: none;
+}
+
+.jhalak {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.jhalak .jhalak-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.jhalak .card .card-img-top {
+  height: 12em;
+  object-fit: contain;
+}
+
+.jhalak .card:hover .card-img-top {
+  transform: rotate(1.3deg) scale(1.04);
+  transition: transform 0.2s ease-in-out;
+}
+
+.jhalak .card-body {
+  box-shadow: inset 0em 0em 1em 0em var(--bs-5);
+}
+
+.jhalak .card-body div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  align-items: center;
+  justify-content: center;
+}
+
+.jhalak a {
+  text-decoration: none;
+}
+
+.jhalak .bi {
+  font-weight: 600;
+  font-size: 1.2em;
+  display: flex;
+  gap: 0.3em;
+  align-items: center;
+  justify-content: center;
+  color: var(--bs-2);
+  border: 0.1em solid transparent;
+}
+
+.jhalak .bi-whatsapp {
+  background-color: var(--bs-1);
+}
+
+.jhalak .bi-telephone-plus {
+  background-color: var(--bs-6);
+}
+
+.jhalak .bi:hover {
+  background-color: var(--bs-2);
+}
+
+.jhalak .bi-whatsapp:hover {
+  color: var(--bs-1);
+  border: 0.1em solid var(--bs-1);
+}
+
+.jhalak .bi-telephone-plus:hover {
+  color: var(--bs-6);
+  border: 0.1em solid var(--bs-6);
+}

@@ -1,0 +1,49 @@
+
+
+/* .jhalak {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.jhalak .jhalak-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.jhalak .card .card-img-top {
+    height: 12em;
+    object-fit: contain;
+}
+
+.jhalak .card:hover .card-img-top {
+    transform: rotate(1.3deg) scale(1.04);
+    transition: transform 0.2s ease-in-out;
+}
+
+.jhalak .card-body {
+    box-shadow: inset 0em 0em 1em 0em var(--bs-5);
+}
+
+.jhalak .btn {
+    background-color: var(--bs-1);
+    border: 0.1em solid transparent;
+    font-weight: 600;
+}
+
+.jhalak .btn:hover {
+    border: 0.1em solid var(--bs-1);
+    background-color: var(--bs-2);
+    color: var(--bs-1);
+}
+
+.jhalak .bi {
+    font-size: 1.2em;
+} */

@@ -1,0 +1,248 @@
+
+
+.bgCar {
+  --bs-card-border-radius: none;
+}
+
+.bgCar .cardimage {
+  opacity: 60%;
+  height: 37em;
+}
+
+.bgCar .cardimage2 {
+  display: none;
+}
+
+.bgCar .card-img-overlay {
+  top: 6em;
+  left: 3em;
+}
+
+.bgCar .card-title {
+  font-size: 4.5em;
+  color: var(--bs-2);
+}
+
+.bgCar .card-text {
+  font-size: 1.5em;
+  color: var(--bs-1);
+}
+
+.jhalak {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.fleet {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+
+.fleet .title {
+  font-size: 4em;
+  color: var(--bs-1);
+  font-weight: 600;
+}
+
+.fleet .card {
+  height: 12em;
+  transition: transform 0.2s ease-in-out;
+}
+
+.fleet .card .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.fleet .card:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.fleet .card .card-title {
+  font-size: 2.4em;
+}
+
+.fleet .card .card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.725);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.jhalak .btn {
+  background-color: var(--bs-1);
+  border: 0.1em solid transparent;
+  font-weight: 600;
+}
+
+.jhalak .btn:hover {
+  border: 0.1em solid var(--bs-1);
+  background-color: var(--bs-2);
+  color: var(--bs-1);
+}
+
+.whyus {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.552);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  gap: 2em;
+}
+
+.whyus::before {
+  content: "";
+  background-image: url(../images/whyus.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* Ensures the background image is fixed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+.whyus .topic {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: white;
+}
+
+.whyus .containers {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 3em;
+  flex-wrap: wrap;
+}
+
+.whyus .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.whyus .title,
+.whyus .description,
+.whyus .topic {
+  color: white;
+}
+
+.whyus .details {
+  display: flex;
+  flex-direction: column;
+}
+
+.whyus .title,
+.whyus .description {
+  width: 15em;
+}
+
+.whyus .title {
+  font-weight: 700;
+  font-size: 1.3em;
+  color: var(--bs-1);
+}
+
+.whyus .bi {
+  color: var(--bs-1);
+  font-size: 2em;
+  background-color: white;
+  padding: 0.4em;
+  border-radius: 2em;
+}
+
+.mission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+  gap: 2em;
+}
+
+.mission .title {
+  font-size: 1.8em;
+  color: var(--bs-1);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+}
+
+.mission .para {
+  width: 30%;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 991.98px) {
+  .bgCar .card-img-overlay {
+    left: 0em;
+    top: 5em;
+  }
+
+  .bgCar .card-title {
+    font-size: 3.5em;
+  }
+}
+
+/* Small devices (phones, 576px and up) */
+@media (max-width: 767.98px) {
+  .bgCar .cardimage {
+    display: none;
+  }
+
+  .bgCar .cardimage2 {
+    display: block;
+    opacity: 20%;
+    height: 35em;
+  }
+
+  .whyus::before {
+    background-position: center -2em;
+  }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .bgCar .card-img-overlay {
+    top: 2em;
+  }
+
+  .bgCar .card-title {
+    font-size: 3em;
+  }
+
+  .bgCar .card-text {
+    font-size: 1em;
+  }
+
+  .mission .para {
+    width: auto;
+  }
+
+  .whyus .title,
+  .whyus .description {
+    width: auto;
+  }
+
+  .fleet .title {
+    font-size: 3em;
+  }
+}

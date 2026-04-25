@@ -1,0 +1,61 @@
+
+
+.overview {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+
+.overview .title {
+  font-size: 4em;
+  color: var(--bs-1);
+  font-weight: 600;
+}
+
+.overview .descryption {
+  background-color: var(--bs-2);
+  box-shadow: 0em 0em 1em 0.3em var(--bs-5);
+  border-radius: 1.5em;
+  padding: 2em;
+}
+
+.fleet {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+
+.fleet .title {
+  font-size: 4em;
+  color: var(--bs-1);
+  font-weight: 600;
+}
+
+.fleet .card {
+  width: 15em;
+  transition: transform 0.2s ease-in-out;
+}
+
+.fleet .card:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.fleet .card .card-title {
+  font-size: 2.4em;
+}
+
+.fleet .card .card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.725);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
